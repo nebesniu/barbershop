@@ -7,7 +7,40 @@
   --second-text-color: #9da4bd;
 }
 
+/* сброс */
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
 body {
-  background: var(--first-title-color);
+  background: var(--primyri-white-color);
   font-family: 'open sans', sans-serif;
+}
+/* header */
+
+.page-header {
+  background-color: #000000;
+}
+
+.nav-list-link {
+  color: var(--primyri-white-color);
+}
+
+.contacts-link {
+  color: var(--primyri-white-color);
+}
+
+.btn {
+  font-family: 'open sans';
+  font-style: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+.first-btn {
+  color: var(--primyri-white-color);
+  background-color: #000000;
 }
