@@ -5,6 +5,7 @@
   --primyri-white-color: #ffffff;
   --first-text-color: #555555;
   --second-text-color: #9da4bd;
+  --accent-color: #ff6c00;
 }
 
 /* сброс */
@@ -28,19 +29,81 @@ body {
 
 .nav-list-link {
   color: var(--primyri-white-color);
+  font-weight: 600;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+  color: var(--accent-color);
 }
 
 .contacts-link {
   color: var(--primyri-white-color);
+  font-weight: 600;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
 }
 
 .btn {
-  font-family: 'open sans';
-  font-style: 600;
+  font-weight: 600;
   font-size: 12px;
   line-height: 16px;
 }
+
 .first-btn {
   color: var(--primyri-white-color);
   background-color: #000000;
+}
+
+.first-btn:hover,
+.first-btn:focus {
+  background-color: var(--accent-color);
+}
+
+.second-btn {
+  color: var(--second-title-color);
+  background-color: var(--primyri-white-color);
+}
+
+.second-btn:hover,
+.second-btn:focus {
+  color: var(--primyri-white-color);
+  background-color: var(--accent-color);
+}
+
+/* HERO */
+
+.hero-list-link {
+  color: var(--second-title-color);
+  font-weight: 600;
+}
+
+.hero-list-link:hover,
+.hero-list-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  color: var(--primyri-white-color);
+  background-color: teal;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 72px;
+}
+
+.after-hero-subtitle {
+  color: #9da4bd;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 2%;
 }
