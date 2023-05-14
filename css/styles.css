@@ -30,6 +30,7 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+  text-transform: uppercase;
 }
 
 .section-title {
@@ -67,9 +68,11 @@ body {
 }
 /*                           кнопки */
 .btn {
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
+  text-transform: uppercase;
 }
 
 .first-btn {
@@ -112,8 +115,6 @@ body {
 }
 
 .hero-subtitle {
-  font-weight: 600;
-  font-size: 11px;
   color: rgba(157, 164, 189, 0.6);
 }
 
