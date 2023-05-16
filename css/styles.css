@@ -19,9 +19,42 @@
 
 /*                               общие стили  */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid tomato;
+}
+
 body {
-  background: var(--primyri-white-color);
+  width: 1600px;
+  background: var(--bg-color);
   font-family: 'open sans', sans-serif;
+}
+
+a {
+  display: block;
 }
 
 .section-subtitle {
@@ -62,7 +95,6 @@ body {
 .nav-list .link {
   color: var(--primyri-white-color);
   font-weight: 600;
-  /* letter-spacing: 10%; */
 }
 
 .nav-list .link:hover,
@@ -82,11 +114,17 @@ body {
 }
 /*                           кнопки */
 .btn {
+  width: 160px;
+  height: 40px;
+  padding: 12px 20px;
+
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   text-transform: uppercase;
+
+  border-radius: 25px;
 }
 
 .first-btn {
@@ -148,11 +186,41 @@ body {
   letter-spacing: 2%;
 }
 /*                       about */
-.about {
-  color: var(--second-title-color);
+.container.about {
+  display: flex;
+  padding-top: 163px;
+  padding-bottom: 88px;
 }
+
+.section-about {
+  background-color: #ffffff;
+}
+
+.about-title {
+  width: 480px;
+  color: var(--second-title-color);
+  margin-bottom: 20px;
+}
+
+.about-list {
+  display: flex;
+  margin-right: 63px;
+}
+
+.about-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-subtitle {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
 .section-about .text {
+  width: 500px;
   color: var(--first-text-color);
+
+  margin-bottom: 20px;
 
   font-size: 18px;
   line-height: 1.67;
@@ -160,6 +228,8 @@ body {
 
 .desc {
   color: var(--first-text-color);
+
+  margin-bottom: 38px;
 
   font-size: 14px;
   line-height: 1.87;
