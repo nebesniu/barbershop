@@ -363,6 +363,9 @@ img {
 
 .advantages {
   background-color: #fff;
+
+  padding-top: 143px;
+  padding-bottom: 137px;
 }
 .advantages-item:nth-child(odd) {
   margin-right: 30px;
