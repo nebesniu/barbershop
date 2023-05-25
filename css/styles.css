@@ -107,6 +107,7 @@ img {
 
 .page-header {
   background-color: var(--bg-color);
+  background-color: teal;
 
   padding-top: 32px;
   padding-bottom: 32px;
@@ -120,6 +121,10 @@ img {
 
 .header-nav {
   display: flex;
+}
+
+.logo {
+  height: 56px;
 }
 
 .nav-list {
@@ -564,6 +569,11 @@ img {
   border-radius: 50%;
 }
 
+.social-svg {
+  width: 24px;
+  height: 24px;
+}
+
 .social-list .item:not(:last-child) {
   margin-right: 10px;
 }
@@ -681,25 +691,13 @@ img {
   align-items: center;
 }
 
-.addr-list .link::before {
-  content: '';
+.footer-svg {
+  display: flex;
+
   width: 24px;
   height: 24px;
 
   margin-right: 16px;
-}
-
-a[target]::before {
-  align-self: start;
-  background-image: url(../image/map-pin.svg);
-}
-
-a[href='tel:+380441111111']::before {
-  background-image: url(../image/phone.svg);
-}
-
-a[href='barbershop@email.com']::before {
-  background-image: url(../image/mail.svg);
 }
 
 /*             footer */
