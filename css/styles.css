@@ -60,7 +60,6 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .section-subtitle {
@@ -124,7 +123,8 @@ img {
 }
 
 .logo {
-  height: 56px;
+  height: 55px;
+  width: 66px;
 }
 
 .nav-list {
@@ -437,18 +437,10 @@ img {
   padding-top: 143px;
   padding-bottom: 137px;
 }
-.advantages-item:nth-child(odd) {
-  margin-right: 30px;
-}
-
-.advantages-item:nth-child(-n + 2) {
-  margin-bottom: 30px;
-}
 
 .advantages-item {
   width: 170px;
   height: 133px;
-
   padding: 24px 20px;
 
   text-align: center;
@@ -456,9 +448,16 @@ img {
   background-color: #f7f7f7;
 }
 
-.advantages-list .wrap {
-  /* display: flex; */
+.advantages-item:nth-child(odd) {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
 
+.advantages-item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.advantages-list .wrap {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.38;
@@ -559,19 +558,33 @@ img {
 }
 
 .social-list .item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-list .link {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
+
   background-color: #fff;
+  color: var(--second-title-color);
   border-radius: 50%;
+}
+
+.social-list .link:hover,
+.social-list .link:focus {
+  background-color: var(--second-title-color);
+  color: var(--accent-color);
 }
 
 .social-svg {
   width: 24px;
   height: 24px;
+  fill: currentColor;
 }
 
 .social-list .item:not(:last-child) {
@@ -640,22 +653,16 @@ img {
   margin-bottom: 40px;
 }
 
-.addr {
-  color: var(--second-text-color);
-  font-style: normal;
-}
-
-.addr .link {
-  color: currentColor;
-
-  font-style: normal;
-  font-size: 18px;
-  line-height: 1.67;
-}
-
 .addr-list {
   margin-bottom: 70px;
+  font-style: normal;
 }
+
+.addr .subtitle {
+  color: #9da4bd;
+  font-style: normal;
+}
+
 .addr-list .item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -689,15 +696,29 @@ img {
 .addr-list .link {
   display: flex;
   align-items: center;
+  color: #9da4bd;
+
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.addr-list .link:hover,
+.addr-list .link:focus {
+  color: var(--accent-color);
+}
+
+.addr-list .link:hover .footer-svg {
+  stroke: var(--accent-color);
 }
 
 .footer-svg {
-  display: flex;
-
   width: 24px;
   height: 24px;
 
   margin-right: 16px;
+  fill: transparent;
+  stroke: currentColor;
 }
 
 /*             footer */
