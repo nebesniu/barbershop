@@ -219,6 +219,13 @@ img {
 
 .hero-list {
   width: 93px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 35px;
+}
+
+.hero-list .item {
+  margin-bottom: 40px;
 }
 
 .hero-list .item:not(:last-child) {
@@ -708,10 +715,6 @@ img {
   color: var(--accent-color);
 }
 
-.addr-list .link:hover .footer-svg {
-  stroke: var(--accent-color);
-}
-
 .footer-svg {
   width: 24px;
   height: 24px;
@@ -719,6 +722,10 @@ img {
   margin-right: 16px;
   fill: transparent;
   stroke: currentColor;
+}
+
+.footer-svg.baseline {
+  align-self: baseline;
 }
 
 /*             footer */
