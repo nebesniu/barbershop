@@ -16,7 +16,103 @@
 </head>
 
 <body>
+  <header>
+    <div class="container">
 
-</body>
+      <a href="">
+        <svg class="header-icon">
+          <use href="./image-fon/sprite.svg#icon-logo">
+
+          </use>
+        </svg>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Главная</a>
+          </li>
+          <li>
+            <a href="">О клубе</a>
+          </li>
+          <li>
+            <a href="">Турниры</a>
+          </li>
+          <li>
+            <a href="">Услуги</a>
+          </li>
+          <li>
+            <a href="">Детский теннис</a>
+          </li>
+          <li>
+            <a href="">Галерея</a>
+          </li>
+          <li>
+            <a href="">Цены</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul>
+        <li>
+          <a href="">
+            <svg class="social-icon">
+              <use href="./image-fon/sprite.svg#icon-vk">
+
+              </use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="social-icon">
+              <use href="./image-fon/sprite.svg#icon-youtube">
+
+              </use>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+
+    </div>
+
+
+  </header>
+
+
+
+
+
+
+  <script>
+    const refs = {
+      openModalBtn: document.querySelector("[data-open-modal]"),
+      closeModalBtn: document.querySelector("[data-close-modal]"),
+      backdrop: document.querySelector("[data-backdrop]"),
+    };
+
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    refs.backdrop.addEventListener("click", logBackdropClick);
+
+    function toggleModal() {
+      refs.backdrop.classList.toggle("is-hidden");
+
+    }
+
+    function logBackdropClick() {
+      console.log();
+
+
+    }
+
+  </script>
+
+
 
 </html>
